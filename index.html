@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Sistem Informasi FMIPA UNTAN</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        /* Mengimpor plugin Tailwind untuk rasio aspek (dipakai untuk video YouTube) */
+        @import "https://unpkg.com/@tailwindcss/aspect-ratio/dist/aspect-ratio.min.css";
+        
+        /* CSS Kustom untuk latar belakang halaman */
+        body {
+            /* Membuat latar belakang gradien biru muda samar di seluruh halaman */
+            background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+        }
+        
+        /* Class kustom untuk gradien di beberapa bagian (section) */
+        .section-gradient {
+            /* Membuat gradien dari putih ke biru muda */
+            background: linear-gradient(to bottom, #ffffff, #f0f9ff);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800">
+
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        
+        <div class="container mx-auto px-6 py-4">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                
+                <div class="text-2xl font-extrabold text-blue-900">
+                    Sistem Informasi <span class="text-blue-600">FMIPA UNTAN</span>
+                </div>
+                
+                <div class="mt-4 md:mt-0 flex items-center space-x-4">
+                    
+                    <ul class="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-x-6 text-base font-medium">
+                        <li><a href="#" class="text-gray-700">Home</a></li>
+                        <li><a href="#" class="text-gray-700">Profil</a></li>
+                        <li><a href="#" class="text-gray-700">Akademik</a></li>
+                        <li><a href="#" class="text-gray-700">Kemahasiswaan</a></li>
+                        <li><a href="#" class="text-gray-700">Penelitian</a></li>
+                        <li><a href="#" class="text-gray-700">Fasilitas</a></li>
+                        <li><a href="#" class="text-gray-700">Penerimaan Maba</a></li>
+                        <li><a href="#" class="text-gray-700">Tautan</a></li>
+                    </ul>
+                    
+                    <div class="relative hidden lg:block">
+                        <input type="text" placeholder="Cari..." class="border border-gray-300 rounded-full pl-4 pr-10 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-blue-700 text-white text-center py-24 px-6 relative overflow-hidden">
+        
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-800 to-blue-500 opacity-90"></div>
+        
+        <div class="relative z-10">
+            <h1 class="text-5xl font-extrabold mb-4">Selamat Datang Di Website Profil</h1>
+            <h2 class="text-3xl font-light opacity-90">Program Studi Sistem Informasi</h2>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 space-y-20">
+
+        <section id="profil-singkat" class="bg-white p-8 rounded-xl shadow-xl space-y-10">
+            
+            <div class="grid md:grid-cols-2 gap-10 items-start">
+                
+                <div>
+                    <img src="hmsi.png" alt="Dosen Mengajar" class="w-full rounded-lg shadow-md">
+                </div>
+                
+                <div>
+                    <h2 class="text-4xl font-extrabold text-blue-900 mb-6 relative">
+                        Profil Singkat Prodi Sistem Informasi
+                        <span class="absolute left-0 bottom-0 w-20 h-1 bg-pink-500 rounded-full"></span>
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-8">
+                        Program Studi Sistem Informasi Universitas Tanjungpura merupakan salah satu program studi strata 1 (S-1) yang berada di Fakultas Matematika dan Ilmu Pengetahuan Alam (FMIPA). Fokus pendidikan dan pembelajaran pada Program Studi Sistem Informasi Universitas Tanjungpura pada bidang keahlian Manajemen Sistem Informasi, Intelejensi Bisnis, dan Pengembangan Perangkat Lunak.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex items-start space-x-4 border border-blue-100 h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Akreditasi</h3>
+                        <p class="text-gray-700 text-base leading-relaxed">
+                            Program studi Sistem Informasi mendapatkan predikat akreditas <strong class="text-blue-600">(BAIK SEKALI)</strong> oleh Lembaga Akreditasi Mandiri Informatika dan Komputer No. SK : 077/SK/LAM-INFOKOM/Ak/S/VIII/2023
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg shadow-inner flex items-start space-x-4 border border-blue-100 h-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-pink-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h2a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2h2m3-2v2m0-14v2m0-2h.01M10 20h4V7a2 2 0 00-2-2h-2a2 2 0 00-2 2v13z" />
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Kualifikasi Dosen</h3>
+                        <p class="text-gray-700 text-base leading-relaxed">
+                            Dosen Program Studi Sistem Informasi memiliki latar belakang pendidikan strata 2 (S-2) dibidang informatika, manajemen sistem informasi, matematika dan ilmu komputer, informatika dan sistem informasi, Teknik dan teknologi informasi, sistem informasi, dan teknologi informasi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                 <img src="lombavoli.png" alt="Mahasiswa di Lab Komputer" class="w-full rounded-lg shadow-md">
+            </div>
+        </section>
+
+        <section id="berita" class="section-gradient p-10 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-extrabold text-center text-blue-900 mb-6">Berita Terkini</h2>
+            <p class="text-center text-gray-700 mb-12 max-w-3xl mx-auto text-lg">
+                Ikuti terus informasi terbaru dan kegiatan aktifitas Program Studi Sistem Informasi Universitas Tanjungpura.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
+                    <img src="berita1.png" alt="Prestasi Farahdiba Helwa Latifah" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Selamat atas Prestasi Farahdiba Helwa Latifah!</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">Mahasiswa Sistem Informasi, Farahdiba Helwa Latifah, meraih Juara 2 lomba Gebyar Kalbar 2024 Gema Ekonomi Syariah Kalimantan Barat. Selamat atas pencapaiannya!</p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
+                    <img src="berita2.png" alt="Informasi Pendaftaran Mandiri Universitas Tanjungpura 2024" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">Pendaftaran Mandiri UNTAN 2024 Telah Dibuka!</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">Informasi lengkap mengenai pendaftaran jalur mandiri Universitas Tanjungpura Tahun 2024 sudah tersedia. Jangan lewatkan kesempatan ini!</p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block" target="_blank">Cek Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-100">
+                    <img src="berita3.png" alt="Pengabdian Kepada Masyarakat di SMPN 1 Ngabang" class="w-full h-52 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-800 mb-3">PKM Dosen dan Mahasiswa di SMPN 1 Ngabang</h3>
+                        <p class="text-gray-600 text-base leading-relaxed">Kegiatan Pengabdian Kepada Masyarakat (PKM) oleh dosen dan mahasiswa Sistem Informasi di SMPN 1 Ngabang tentang pelatihan TIK.</p>
+                        <a href="#" class="text-blue-600 font-medium mt-4 inline-block">Baca Selengkapnya &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="keahlian" class="bg-blue-700 text-white py-16 rounded-xl shadow-xl">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-extrabold text-center mb-6">Fokus Keahlian</h2>
+                <p class="text-center text-blue-100 mb-12 max-w-3xl mx-auto text-lg">
+                    Program Studi Sistem Informasi Universitas Tanjungpura memfokuskan tiga keahlian utama yang akan membekali mahasiswa untuk sukses di dunia kerja yang dinamis.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <div class="p-8 bg-blue-600 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Manajemen Sistem Informasi</h3>
+                        <p class="text-blue-100 text-left leading-relaxed">
+                            Mempelajari interaksi sistem-sistem informasi yang bertanggung jawab mengumpulkan dan mengolah data untuk menyediakan informasi yang berguna bagi semua tingkatan manajemen di dalam kegiatan perencanaan dan pengendalian
+                        </p>
+                    </div>
+                    
+                    <div class="p-8 bg-blue-600 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Pengembangan Perangkat Lunak</h3>
+                        <p class="text-blue-100 text-left leading-relaxed">
+                            Serangkaian aktivitas ilmu komputer yang didedikasikan untuk proses pembuatan, perancangan, penerapan, dan dukungan perangkat lunak
+                        </p>
+                    </div>
+                    
+                    <div class="p-8 bg-blue-600 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold mb-4 text-center">Inteligensi Bisnis</h3>
+                        <p class="text-blue-100 text-left leading-relaxed">
+                            Sekumpulan teknik dan alat yang mengkombinasikan analisis bisnis, data mining, visualisasi data, alat dan infrastruktur data, serta aplikasinya digunakan untuk mentransformasi data mentah menjadi sebuah informasi yang dapat berguna dalam proses pengambilan keputusan bisnis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="section-gradient p-10 rounded-xl shadow-inner">
+            <h2 class="text-4xl font-extrabold text-center text-blue-900 mb-6">Video Profil</h2>
+            <p class="text-center text-gray-700 mb-12 max-w-3xl mx-auto text-lg">
+                Saksikan video singkat Profil Program Studi Sistem Informasi yang dipersembahkan oleh Himpunan Mahasiswa Sistem Informasi untuk memperkenalkan prodi kami.
+            </p>
+            
+            <div class="max-w-5xl mx-auto">
+                
+                <div class="aspect-w-16 aspect-h-9 rounded-xl overflow-hidden shadow-2xl">
+                    
+                    <iframe 
+                        src="https://www.youtube.com/embed/STDD73vhRhs" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        class="w-full h-full">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+    </main> <footer class="bg-gray-900 text-gray-300 p-10 text-center mt-20">
+        <p class="text-lg">&copy; 2025 Program Studi Sistem Informasi FMIPA UNTAN. Semua hak dilindungi.</p>
+    </footer>
+
+</body>
+</html>
