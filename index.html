@@ -219,9 +219,17 @@
             </div>
         </section>
 
-    </main> <footer class="bg-gray-900 text-gray-300 p-10 text-center mt-20">
-        <p class="text-lg">&copy; 2025 Program Studi Sistem Informasi FMIPA UNTAN. Semua hak dilindungi.</p>
+    </main> 
+    <footer class="bg-gray-900 text-gray-300 p-10 text-center mt-20">
+        <p class="text-lg">&copy; <span id="copyright-year">2025</span> Program Studi Sistem Informasi FMIPA UNTAN. Semua hak dilindungi.</p>
     </footer>
 
-</body>
+    <script>
+        const yearElement = document.getElementById("copyright-year");
+        
+        const currentYear = new Date().getFullYear();
+        
+        yearElement.textContent = currentYear;
+    </script>
+    </body>
 </html>
